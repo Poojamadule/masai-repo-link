@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            display:grid;
+              
+           background-color: yellow;
+           font-size: 30px;
+           color: black;
+        }
+        .cont{
+            margin-top:10px;
+            display:flex;
+            
+            
+        }
+        .a{
+            
+            margin-right: 10px;
+            background-color: red;
+            display:grid;
+            grid-template-columns: repeat(1 100px);
+            grid-template-rows: repeat(3 60px);
+            gap:10px 20px;
+        }
+        .b{
+            
+            
+            display:grid;
+            grid-template-columns: repeat(1 100px);
+            grid-template-rows: repeat(3 60px);
+            gap:10px 20px;
+            
+        }
+        .b>div{
+            background-color: greenyellow;
+           
+        }
+        @media screen and (max-width:1050px){
+            .cont{
+                display:flex;
+            }
+            
+            .a{
+                grid-template-columns:
+                repeat(1 100px) ;
+                grid-template-rows:repeat(1 100px) ;
+            }
+            .b{
+                grid-template-columns: repeat(1 100px);
+                grid-template-rows: repeat(1 100px);
+            }
+        }
+        
+        @media screen and (max-width:650px){
+            .cont{
+                flex-direction: column;
+            }
+            .b{
+                grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(1,100px);
+
+            }
+        }
+    
+        @media screen and (max-width:350px)and (min-width:100px){
+            .cont{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+       Navigation
+    </div>
+    <div class="cont">
+        <div class="a">LEFT BOX</div>
+        <div class="b">
+            <div>RIGHT BOX 1</div>
+            <div>RIGHT BOX 2</div>
+            <div>RIGHT BOX 3</div>
+        </div>
+    </div>
+</body>
+</html>
