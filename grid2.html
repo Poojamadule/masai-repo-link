@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            
+            display:grid;
+           grid-template-rows: 1fr 2fr 1fr 1fr 2fr;
+           grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+           gap:10px 20px;
+        }
+        .card>div{
+            background-color: grey;
+            color:white;
+        }
+        .cont>div:nth-child(1){
+            grid-column-start: 1 ;
+            grid-column-end: 2;
+            grid-row-start:1 ;
+            grid-row-end: 2;
+        }
+        .cont>div:nth-child(2){
+            grid-column-start: 2 ;
+            grid-column-end: 3;
+            grid-row-start:1;
+            grid-row-end: 2;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="div1"> A</div>
+        <div class="div2"> B</div>
+        <div class="div3"> C</div>
+        <div class="div4">D</div>
+        <div class="div5">E</div>
+    </div>
+</body>
+</html>
