@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            width:80%;
+            width:700px;
+            background-color: yellow;
+            font-size: 30px;
+            color:black;
+        }
+        .cont{
+            width:80%;
+            display:grid;
+            margin-top:20px;
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 100px 100px;
+            gap:10px 20px;
+        }
+        .cont>div{
+            width:100%;
+            
+        }
+        .cont>div:nth-child(1){
+            
+          background-color: red;
+          color:grey;
+        }
+        .cont >div:nth-child(2){
+            
+            background-color: greenyellow;
+            color:grey;
+        }
+        @media screen and (max-width:1050px){
+            .cont{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(1,100px);
+            }
+        }
+        @media screen and (max-width:550px){
+            .cont{
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(2,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">Navigation</div>
+    <div class="cont">
+        <div>LEFT BOX</div>
+        <DIV>RIGHT BOX</DIV>
+    </div>
+</body>
+</html>
