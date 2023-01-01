@@ -41,35 +41,36 @@
             background-color: greenyellow;
            
         }
-        @media screen and (max-width:1050px){
+        @media screen and (min-width:1000px)and (max-width:2050px){
             .cont{
                 display:flex;
             }
             
-            .a{
-                grid-template-columns:
-                repeat(1 100px) ;
-                grid-template-rows:repeat(1 100px) ;
-            }
             .b{
                 grid-template-columns: repeat(1 100px);
                 grid-template-rows: repeat(1 100px);
             }
         }
         
-        @media screen and (max-width:650px){
+        @media screen and (max-width:999px)and(min-width:601px){
             .cont{
                 flex-direction: column;
             }
             .b{
+                display:grid;
+                flex-direction: row;
                 grid-template-columns: repeat(3,100px);
             grid-template-rows: repeat(1,100px);
 
             }
         }
     
-        @media screen and (max-width:350px)and (min-width:100px){
+        @media screen and
+         (max-width:600px){
             .cont{
+                flex-direction: column;
+            }
+            .b{
                 flex-direction: column;
             }
         }
