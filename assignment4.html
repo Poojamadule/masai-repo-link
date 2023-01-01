@@ -5,10 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+       .btn{
+        margin-bottom: 15px;
+       }
+       button{
+        margin-right: 15px;
+       }
+    </style>
 </head>
 <body>
-    <input type="number" enter 1st Number>
-    <input type="number">
-    <button>Add</button><button>Subtract</button><button>Multiply</button><button>Divide</button>
+   <div class="btn"> <input type="number" placeholder="enter 1st Number" >
+    <input type="number" placeholder="enter 2nd Number">
+    </div>
+    <button onclick="ans();">Add</button><button>Subtract</button><button>Multiply</button>
+    <button>Divide</button>
 </body>
+<script>
+function ans(){
+    alert(nameInput.value);
+}
+</script>
 </html>
